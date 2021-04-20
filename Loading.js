@@ -2,12 +2,12 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Loading(){
-    return <View style={styels.container}>
-        <Text style={styels.text}>Getting the weather</Text>
+    return <View style={styles.container}>
+        <Text style={styles.text}>Getting the weather</Text>
     </View>
 }
 
-const styels = StyleSheet.create({
+const styles = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: "flex-end",
