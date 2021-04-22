@@ -71,14 +71,14 @@ export default function Weather({ temp, condition }) {
   return (
     <LinearGradient
       // gradient : [ "top", "bottom" ]
-      colors={weatherOptions["Dust"].gradient}
+      colors={weatherOptions[condition].gradient}
       style={styles.container}
     >
       <StatusBar barStyle="light-content" />
       <View style={styles.halfContainer}>
         <MaterialCommunityIcons
           size={96}
-          name={weatherOptions["Dust"].iconName}
+          name={weatherOptions[condition].iconName}
           color="white"
         />
         <Text style={{ ...styles.temp, ...styles.textColorWhite }}>
@@ -87,10 +87,10 @@ export default function Weather({ temp, condition }) {
       </View>
       <View style={{ ...styles.halfContainer, ...styles.textContainer }}>
         <Text style={{ ...styles.title, ...styles.textColorWhite }}>
-          {weatherOptions["Dust"].title}
+          {weatherOptions[condition].title}
         </Text>
         <Text style={{ ...styles.subTitle, ...styles.textColorWhite }}>
-          {weatherOptions["Dust"].subTitle}
+          {weatherOptions[condition].subTitle}
         </Text>
       </View>
     </LinearGradient>
